@@ -3,10 +3,13 @@ import mongoose from "mongoose";
 
 const curdSchema = new mongoose.Schema({
 
-   username:string,
-   useremail:{type:String,required:true},
-   userpassword:{type:String,required:true},
-   status:{type:String,default:"active"}
+     name: String,
+    email: String,
+    password: String,
+    status: {
+        type: String,
+        default: "active"
+    }
 
 },{timestamps:true})
 
